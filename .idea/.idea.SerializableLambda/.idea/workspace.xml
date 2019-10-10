@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bf23e83c-3299-4253-b54a-bca325c24cbd" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/SerializableLambda/SerializableLambdaBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SerializableLambda/AbstractSerializableLambdaBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B685D02A-5330-4337-A2F3-6A6CFAB13B30/5f/fab462f3/LambdaExpression.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ExampleRunner/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B685D02A-5330-4337-A2F3-6A6CFAB13B30/fa/6d2cb9a8/Expression.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SerializableLambda/SerializableLambda.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SerializableLambda/SerializableLambdaFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SerializableLambda/SerializableClass.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SerializableLambda/IServiceLocator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F9983402-2CF8-45EF-8679-CD8D8CA3CF26/ef/97735b6e/MethodBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F9983402-2CF8-45EF-8679-CD8D8CA3CF26/8e/c07e1925/Array.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SerializableLambda/SerializableParameter.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/SerializableLambda/AbstractSerializableLambda.cs" />
+        <option value="$PROJECT_DIR$/SerializableLambda/SerializableLambdaCreator.cs" />
+        <option value="$PROJECT_DIR$/SerializableLambda/SerializableLambdaBuilderBuilder.cs" />
+        <option value="$PROJECT_DIR$/SerializableLambda/SerializableClass.cs" />
+        <option value="$PROJECT_DIR$/SerializableLambda/SerializableParameter.cs" />
+        <option value="$PROJECT_DIR$/SerializableLambda/AbstractSerializableLambdaBuilder.cs" />
+        <option value="$PROJECT_DIR$/SerializableLambda/IServiceLocator.cs" />
+        <option value="$PROJECT_DIR$/SerializableLambda/SerializableLambda.cs" />
+        <option value="$PROJECT_DIR$/SerializableLambda/SerializableLambdaBuilder.cs" />
+        <option value="$PROJECT_DIR$/SerializableLambda/SerializableLambdaFactory.cs" />
+        <option value="$PROJECT_DIR$/ExampleRunner/Program.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1RyyN6pvcufsaWp4au5dqgmvp6z" />
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/ExampleRunner/bin/Debug/netcoreapp2.2/ExampleRunner.dll" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ExampleRunner/bin/Debug/netcoreapp2.2" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/ExampleRunner/ExampleRunner.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v2.2" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bf23e83c-3299-4253-b54a-bca325c24cbd" name="Default Changelist" comment="" />
+      <created>1570653588228</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1570653588228</updated>
+      <workItem from="1570653591626" duration="3072000" />
+      <workItem from="1570656795862" duration="7654000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsManagerConfiguration">
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/ExampleRunner/Program.cs</url>
+          <line>29</line>
+          <properties documentPath="$PROJECT_DIR$/ExampleRunner/Program.cs" initialLine="20">
+            <startOffsets>
+              <option value="884" />
+            </startOffsets>
+            <endOffsets>
+              <option value="918" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/SerializableLambda/AbstractSerializableLambdaBuilder.cs</url>
+          <line>23</line>
+          <properties documentPath="$PROJECT_DIR$/SerializableLambda/AbstractSerializableLambdaBuilder.cs" initialLine="27">
+            <startOffsets>
+              <option value="818" />
+            </startOffsets>
+            <endOffsets>
+              <option value="819" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
