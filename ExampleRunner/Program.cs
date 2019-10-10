@@ -14,7 +14,7 @@ namespace ExampleRunner
 
         public string DoSomethingElse()
         {
-            return "dadad";
+            return "asjdklasdjalksd";
         }
 
         public string GenericSomething<T>()
@@ -57,6 +57,10 @@ namespace ExampleRunner
 
             var g = SerializableLambdaFactory.Create<ExampleObject, string>(eo => eo.GenericSomething<double>());
             var gReturn = g.Execute(locator);
+
+            var gs = g.Serialize();
+            var gs2 = SerializableLambda<string>.Deserialize(gs);
+            var gs2Return = gs2.Execute(locator);
         }
     }
 }

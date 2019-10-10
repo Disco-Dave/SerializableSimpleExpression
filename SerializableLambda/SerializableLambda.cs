@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Newtonsoft.Json;
 
 namespace SerializableLambda
 {
@@ -10,6 +11,11 @@ namespace SerializableLambda
         private string MethodName { get; }
         private IEnumerable<object> Parameters { get; } = new List<object>();
         private Type[] GenericTypes { get; } = new Type[] { };
+
+        private readonly static JsonSerializerSettings settings = new JsonSerializerSettings()
+        {
+            TypeNameHandling = TypeNameHandling.All,
+        };
         
         internal SerializableLambda(Type classType, string methodName, IEnumerable<object> parameters, Type[] genericTypes)
         {
@@ -53,6 +59,25 @@ namespace SerializableLambda
             }
 
             return returnValue;
+        }
+
+        public string Serialize()
+        {
+            var snapshot = new SerializableLambdaSnapshot()
+            {
+                ClassType = this.ClassType,
+                GenericTypes = this.GenericTypes,
+                MethodName = this.MethodName,
+                Parameters = this.Parameters,
+            };
+
+            return JsonConvert.SerializeObject(snapshot, settings);
+        }
+
+        public static SerializableLambda<TReturnType> Deserialize(string serializedLambda)
+        {
+            var snapshot = JsonConvert.DeserializeObject<SerializableLambdaSnapshot>(serializedLambda);
+            return new SerializableLambda<TReturnType>(snapshot.ClassType, snapshot.MethodName, snapshot.Parameters, snapshot.GenericTypes);
         }
     }
 }
