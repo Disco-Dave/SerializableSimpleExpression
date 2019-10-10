@@ -49,8 +49,11 @@ namespace ExampleRunner
             var s = SerializableLambdaFactory.Create<ExampleObject, IEnumerable, int, string, double>(
                (eo, x, z, y) => eo.DoSomething(x, y, z))
                .SetParameters(1, "adsadasdsa", 303030.30);
-
             var sReturn = s.Execute(locator);
+
+            var ss = s.Serialize();
+            var ss2 = SerializableLambda<IEnumerable>.Deserialize(ss);
+            var ss2Return = ss2.Execute(locator);
 
             var f = SerializableLambdaFactory.Create<ExampleObject, string>(eo => eo.DoSomethingElse());
             var fReturn  = f.Execute(locator);

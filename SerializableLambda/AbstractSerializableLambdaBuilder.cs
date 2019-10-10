@@ -25,6 +25,11 @@ namespace SerializableLambda
                 {
                     this.GenericTypes = method.Method.GetGenericArguments();
                 }
+
+                if (method.Object.Type != classType)
+                {
+                    throw new ArgumentException();
+                }
             }
             else
             {

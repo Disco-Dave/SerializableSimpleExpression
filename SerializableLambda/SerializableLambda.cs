@@ -15,6 +15,7 @@ namespace SerializableLambda
         private readonly static JsonSerializerSettings settings = new JsonSerializerSettings()
         {
             TypeNameHandling = TypeNameHandling.All,
+            
         };
         
         internal SerializableLambda(Type classType, string methodName, IEnumerable<object> parameters, Type[] genericTypes)
