@@ -1,6 +1,8 @@
 using System;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Reflection;
+using Newtonsoft.Json;
 
 namespace SerializableLambda
 {
@@ -8,7 +10,8 @@ namespace SerializableLambda
     {
         private Type ClassType { get; }
         private string MethodName { get; }
-        private int[] ParamOrder { get; } 
+        private int[] ParamOrder { get; }
+        private Type[] GenericTypes { get; } = new Type[] { };
 
         protected AbstractSerializableLambdaBuilder(LambdaExpression expr, Type classType)
         {
@@ -17,6 +20,11 @@ namespace SerializableLambda
                 this.MethodName = method.Method.Name;
                 this.ClassType = classType;
                 this.ParamOrder = GetParamOrder(method, expr);
+
+                if (method.Method.IsGenericMethod)
+                {
+                    this.GenericTypes = method.Method.GetGenericArguments();
+                }
             }
             else
             {
@@ -27,7 +35,7 @@ namespace SerializableLambda
         protected SerializableLambda<TReturn> SetParameters(params object[] parameters)
         {
             var reOrderedParams = this.ParamOrder.Select(i => parameters[i]);
-            return new SerializableLambda<TReturn>(this.ClassType, this.MethodName, reOrderedParams);
+            return new SerializableLambda<TReturn>(this.ClassType, this.MethodName, reOrderedParams, this.GenericTypes);
         }
 
         private static int[] GetParamOrder(MethodCallExpression methodCallExpr, LambdaExpression lambdaExpr)

@@ -9,8 +9,9 @@ namespace SerializableLambda
         private Type ClassType { get; }
         private string MethodName { get; }
         private IEnumerable<object> Parameters { get; } = new List<object>();
+        private Type[] GenericTypes { get; } = new Type[] { };
         
-        internal SerializableLambda(Type classType, string methodName, IEnumerable<object> parameters)
+        internal SerializableLambda(Type classType, string methodName, IEnumerable<object> parameters, Type[] genericTypes)
         {
             this.ClassType = classType ?? throw new ArgumentNullException(nameof(classType));
             this.MethodName = methodName ?? throw new ArgumentNullException(nameof(methodName));
@@ -18,6 +19,11 @@ namespace SerializableLambda
             if (parameters?.Any() ?? false)
             {
                 this.Parameters = parameters;
+            }
+
+            if (genericTypes?.Any() ?? false)
+            {
+                this.GenericTypes = genericTypes;
             }
         }
 
@@ -29,6 +35,11 @@ namespace SerializableLambda
                 .Invoke(serviceLocator, null);
 
             var method = this.ClassType.GetMethod(this.MethodName);
+
+            if (this.GenericTypes.Any())
+            {
+                method = method.MakeGenericMethod(this.GenericTypes);
+            }
 
             TReturnType returnValue;
 

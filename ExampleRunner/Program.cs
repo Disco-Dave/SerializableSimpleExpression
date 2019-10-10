@@ -1,6 +1,5 @@
 using System;
 using System.Collections;
-using System.Collections.Concurrent;
 using System.Collections.Generic;
 using SerializableLambda;
 
@@ -20,7 +19,7 @@ namespace ExampleRunner
 
         public string GenericSomething<T>()
         {
-            return nameof(T);
+            return typeof(T).ToString();
         }
     }
 
@@ -55,6 +54,9 @@ namespace ExampleRunner
 
             var f = SerializableLambdaFactory.Create<ExampleObject, string>(eo => eo.DoSomethingElse());
             var fReturn  = f.Execute(locator);
+
+            var g = SerializableLambdaFactory.Create<ExampleObject, string>(eo => eo.GenericSomething<double>());
+            var gReturn = g.Execute(locator);
         }
     }
 }
