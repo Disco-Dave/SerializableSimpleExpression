@@ -9,7 +9,7 @@ namespace SerializableLambda
     {
         private Type ClassType { get; }
         private string MethodName { get; }
-        private IEnumerable<object> Parameters { get; } = new List<object>();
+        private IEnumerable<SerializableParameter> Parameters { get; } = new List<SerializableParameter>();
         private Type[] GenericTypes { get; } = new Type[] { };
 
         private readonly static JsonSerializerSettings settings = new JsonSerializerSettings()
@@ -25,13 +25,17 @@ namespace SerializableLambda
 
             if (parameters?.Any() ?? false)
             {
-                this.Parameters = parameters;
+                this.Parameters = parameters.Select(p => new SerializableParameter(p));
             }
 
             if (genericTypes?.Any() ?? false)
             {
                 this.GenericTypes = genericTypes;
             }
+        }
+
+        internal SerializableLambda(SerializableLambdaSnapshot snapshot) : this(snapshot.ClassType, snapshot.MethodName, snapshot.Parameters?.Select(sp => sp.Value), snapshot.GenericTypes)
+        {
         }
 
         public TReturnType Execute(IServiceLocator serviceLocator)
@@ -52,7 +56,8 @@ namespace SerializableLambda
 
             if (this.Parameters.Any())
             {
-                returnValue = (TReturnType) method.Invoke(classInstance, this.Parameters.ToArray());
+                var parameters = this.Parameters.Select(p => p.Value).ToArray();
+                returnValue = (TReturnType) method.Invoke(classInstance, parameters);
             }
             else
             {
@@ -78,7 +83,7 @@ namespace SerializableLambda
         public static SerializableLambda<TReturnType> Deserialize(string serializedLambda)
         {
             var snapshot = JsonConvert.DeserializeObject<SerializableLambdaSnapshot>(serializedLambda);
-            return new SerializableLambda<TReturnType>(snapshot.ClassType, snapshot.MethodName, snapshot.Parameters, snapshot.GenericTypes);
+            return new SerializableLambda<TReturnType>(snapshot);
         }
     }
 }

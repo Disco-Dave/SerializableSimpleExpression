@@ -7,7 +7,7 @@ namespace SerializableLambda
     {
         public Type ClassType { get; set; }
         public string MethodName { get; set; }
-        public IEnumerable<object> Parameters { get; set; } = new List<object>();
+        public IEnumerable<SerializableParameter> Parameters { get; set; } = new List<SerializableParameter>();
         public Type[] GenericTypes { get; set; } = new Type[] { };
     }
 }
