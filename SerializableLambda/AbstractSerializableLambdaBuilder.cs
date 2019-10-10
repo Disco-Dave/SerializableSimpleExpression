@@ -1,8 +1,6 @@
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Security.Cryptography;
 
 namespace SerializableLambda
 {
@@ -10,16 +8,14 @@ namespace SerializableLambda
     {
         private Type ClassType { get; }
         private string MethodName { get; }
-        private Type ReturnType { get; }
         private int[] ParamOrder { get; } 
 
-        protected AbstractSerializableLambdaBuilder(LambdaExpression expr, Type classType, Type returnType)
+        protected AbstractSerializableLambdaBuilder(LambdaExpression expr, Type classType)
         {
             if (expr.Body is MethodCallExpression method)
             {
                 this.MethodName = method.Method.Name;
                 this.ClassType = classType;
-                this.ReturnType = returnType;
                 this.ParamOrder = GetParamOrder(method, expr);
             }
             else
@@ -31,7 +27,7 @@ namespace SerializableLambda
         protected SerializableLambda<TReturn> SetParameters(params object[] parameters)
         {
             var reOrderedParams = this.ParamOrder.Select(i => parameters[i]);
-            return new SerializableLambda<TReturn>(this.ClassType, this.MethodName, this.ReturnType, reOrderedParams);
+            return new SerializableLambda<TReturn>(this.ClassType, this.MethodName, reOrderedParams);
         }
 
         private static int[] GetParamOrder(MethodCallExpression methodCallExpr, LambdaExpression lambdaExpr)
