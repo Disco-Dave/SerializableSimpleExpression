@@ -46,7 +46,7 @@ namespace ExampleRunner
         {
             var locator = new ServiceLocator().Register(_ => new ExampleObject());
 
-            var s = SerializableLambdaFactory.Create<ExampleObject, IEnumerable, int, string, double>(
+            SerializableLambda<IEnumerable> s = SerializableLambdaFactory.Create<ExampleObject, IEnumerable, int, string, double>(
                (eo, x, z, y) => eo.DoSomething(x, y, z))
                .SetParameters(1, "adsadasdsa", 303030.30);
             var sReturn = s.Execute(locator);

@@ -45,7 +45,8 @@ namespace SerializableLambda
                 .MakeGenericMethod(this.ClassType)
                 .Invoke(serviceLocator, null);
 
-            var method = this.ClassType.GetMethod(this.MethodName);
+            var parameterTypes = this.Parameters.Select(p => p.Type).ToArray();
+            var method = this.ClassType.GetMethod(this.MethodName, parameterTypes);
 
             if (this.GenericTypes.Any())
             {
