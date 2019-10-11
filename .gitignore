@@ -1,3 +1,4 @@
+/.vs/SerializableLambda/v16
 **/bin
 **/obj
-/.vs/SerializableLambda/v16
+**/.idea
