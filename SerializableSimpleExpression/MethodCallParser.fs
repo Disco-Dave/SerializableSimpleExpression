@@ -1,19 +1,29 @@
 namespace SerializableSimpleExpression
 
-open Microsoft.FSharp.Quotations
+open FSharpPlus
 open Microsoft.FSharp.Quotations.DerivedPatterns
 open Microsoft.FSharp.Quotations.Patterns
-open System.Linq.Expressions
+open System.Reflection
 
 
-
+type internal MethodCallParseResults =
+    {
+        method : MethodInfo
+        args : obj array 
+    }
+    
 module internal MethodCallParser =
+    let x (xs : int list) = monad {
+        let! h = tryHead xs
+        return h
+    }
+    
     let parse expr =
         match expr with
-        | Lambda (param, body) ->
+        | Lambdas (param, body) ->
             match body with
             | Call(exprOpt, methodInfo, exprList) ->
-                ()
-            | _ -> ()
-        | _ -> ()
+                Some 1
+            | _ -> None
+        | _ -> None
 

@@ -5,10 +5,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="AssemblyInfo.fs" />
     <Compile Include="IServiceLocator.fs" />
     <Compile Include="MethodCallParser.fs" />
     <Compile Include="Thunk.fs" />
     <Compile Include="ThunkBuilder.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FSharpPlus" Version="1.1.0-CI00272" />
   </ItemGroup>
 
 </Project>
