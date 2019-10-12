@@ -1,6 +1,5 @@
 namespace SerializableSimpleExpression
 
-open FSharpPlus
 open Microsoft.FSharp.Quotations.DerivedPatterns
 open Microsoft.FSharp.Quotations.Patterns
 open System.Reflection
@@ -9,21 +8,36 @@ open System.Reflection
 type internal MethodCallParseResults =
     {
         method : MethodInfo
-        args : obj array 
+        argOrder : int array 
     }
     
 module internal MethodCallParser =
-    let x (xs : int list) = monad {
-        let! h = tryHead xs
-        return h
-    }
+    let private reOrderParams (methodArgs : string array) (passedInArgs : string seq)  =
+       passedInArgs
+       |> Seq.map (fun a -> Array.findIndex ((=) a) methodArgs)
+       |> Seq.toArray
     
     let parse expr =
         match expr with
         | Lambdas (param, body) ->
             match body with
-            | Call(exprOpt, methodInfo, exprList) ->
-                Some 1
+            | Call(_, methodInfo, exprList) ->
+                let passedInArgs =
+                    List.tryHead param
+                    |> Option.map (List.map (fun a -> a.ToString()) >> List.skip 1)
+                    
+                let methodArgs =
+                    exprList
+                    |> Seq.map (fun a -> a.ToString())
+                    |> Seq.toArray
+                    
+                passedInArgs
+                |> Option.map (reOrderParams methodArgs)
+                |> Option.map (fun argOrder ->
+                    {
+                        method = methodInfo
+                        argOrder = argOrder
+                    })
             | _ -> None
         | _ -> None
 

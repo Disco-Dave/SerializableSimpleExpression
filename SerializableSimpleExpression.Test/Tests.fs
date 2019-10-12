@@ -9,5 +9,6 @@ type ExampleClass () =
 
 [<Fact>]
 let ``My test`` () =
-    MethodCallParser.parse <@ (fun (ec : ExampleClass, a, b) -> ec.SomeMethod(a, b)) @> |> ignore
+    let results = MethodCallParser.parse <@ (fun (ec : ExampleClass, b, a) -> ec.SomeMethod(a, b)) @>
+    printf "%A" results
     Assert.True(true)
