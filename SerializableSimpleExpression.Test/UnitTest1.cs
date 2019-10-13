@@ -53,6 +53,14 @@ namespace SerializableSimpleExpression.Test
 
             var sThunk = JsonConvert.SerializeObject(thunk);
             var result = JsonConvert.DeserializeObject<Thunk<string>>(sThunk).Execute(locator);
+
+            var thunk2 =
+                ThunkBuilder.Create<ExampleObject, List<int>, string, double, int>((eo, a, b, c) => eo.DoSomething(c, b, a))
+                    .SetArguments("abc", 1.3, 2);
+
+            var sThunk2 = JsonConvert.SerializeObject(thunk2);
+            var result2 = JsonConvert.DeserializeObject<Thunk<List<int>>>(sThunk2).Execute(locator);
+
         }
     }
 }

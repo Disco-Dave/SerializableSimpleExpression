@@ -63,7 +63,7 @@ namespace SerializableSimpleExpression
     {
         internal ThunkBuilder(LambdaExpression expression) : base(expression) { }
 
-        public Thunk<TReturn> SetArgument(TArg1 arg1, TArg2 arg2) =>
+        public Thunk<TReturn> SetArguments(TArg1 arg1, TArg2 arg2) =>
             base.SetArguments(arg1, arg2);
     }
     
@@ -71,7 +71,7 @@ namespace SerializableSimpleExpression
     {
         internal ThunkBuilder(LambdaExpression expression) : base(expression) { }
 
-        public Thunk<TReturn> SetArgument(TArg1 arg1, TArg2 arg2, TArg3 arg3) =>
+        public Thunk<TReturn> SetArguments(TArg1 arg1, TArg2 arg2, TArg3 arg3) =>
             base.SetArguments(arg1, arg2, arg3);
     }
     
@@ -79,7 +79,7 @@ namespace SerializableSimpleExpression
     {
         internal ThunkBuilder(LambdaExpression expression) : base(expression) { }
 
-        public Thunk<TReturn> SetArgument(TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4) =>
+        public Thunk<TReturn> SetArguments(TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4) =>
             base.SetArguments(arg1, arg2, arg3, arg4);
     }
     
@@ -87,7 +87,7 @@ namespace SerializableSimpleExpression
     {
         internal ThunkBuilder(LambdaExpression expression) : base(expression) { }
 
-        public Thunk<TReturn> SetArgument(TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5) =>
+        public Thunk<TReturn> SetArguments(TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5) =>
             base.SetArguments(arg1, arg2, arg3, arg4, arg5);
     }
     
@@ -95,7 +95,7 @@ namespace SerializableSimpleExpression
     {
         internal ThunkBuilder(LambdaExpression expression) : base(expression) { }
 
-        public Thunk<TReturn> SetArgument(TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6) =>
+        public Thunk<TReturn> SetArguments(TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6) =>
             base.SetArguments(arg1, arg2, arg3, arg4, arg5, arg6);
     }
     
@@ -103,7 +103,7 @@ namespace SerializableSimpleExpression
     {
         internal ThunkBuilder(LambdaExpression expression) : base(expression) { }
 
-        public Thunk<TReturn> SetArgument(TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7) =>
+        public Thunk<TReturn> SetArguments(TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7) =>
             base.SetArguments(arg1, arg2, arg3, arg4, arg5, arg6, arg7);
     }
     
@@ -111,7 +111,7 @@ namespace SerializableSimpleExpression
     {
         internal ThunkBuilder(LambdaExpression expression) : base(expression) { }
 
-        public Thunk<TReturn> SetArgument(TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8) =>
+        public Thunk<TReturn> SetArguments(TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8) =>
             base.SetArguments(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
     }
     
@@ -119,7 +119,7 @@ namespace SerializableSimpleExpression
     {
         internal ThunkBuilder(LambdaExpression expression) : base(expression) { }
 
-        public Thunk<TReturn> SetArgument(TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9) =>
+        public Thunk<TReturn> SetArguments(TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9) =>
             base.SetArguments(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
     }
     
@@ -127,7 +127,7 @@ namespace SerializableSimpleExpression
     {
         internal ThunkBuilder(LambdaExpression expression) : base(expression) { }
 
-        public Thunk<TReturn> SetArgument(TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10) =>
+        public Thunk<TReturn> SetArguments(TArg1 arg1, TArg2 arg2, TArg3 arg3, TArg4 arg4, TArg5 arg5, TArg6 arg6, TArg7 arg7, TArg8 arg8, TArg9 arg9, TArg10 arg10) =>
             base.SetArguments(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
     }
 

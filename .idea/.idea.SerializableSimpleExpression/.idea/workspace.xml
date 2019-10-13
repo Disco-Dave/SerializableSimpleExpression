@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a255cc9c-94bf-4fa3-bc3c-fd4b527ab6bc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SerializableLambda/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SerializableLambda/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SerializableLambda/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SerializableLambda/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExampleRunner/ExampleRunner.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExampleRunner/Program.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SerializableLambda.sln" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SerializableLambda/AbstractSerializableLambdaBuilder.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SerializableLambda/IServiceLocator.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SerializableLambda/SerializableLambda.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SerializableLambda/SerializableLambda.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SerializableLambda/SerializableLambdaBuilder.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SerializableLambda/SerializableLambdaFactory.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SerializableLambda/SerializableLambdaSnapshot.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SerializableLambda/SerializableParameter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SerializableSimpleExpression/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SerializableSimpleExpression/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SerializableSimpleExpression.Test/UnitTest1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SerializableSimpleExpression.Test/UnitTest1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SerializableSimpleExpression/AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SerializableSimpleExpression/Thunk.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SerializableSimpleExpression/Thunk.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SerializableSimpleExpression/ThunkBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SerializableSimpleExpression/ThunkBuilder.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +19,7 @@
     <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression/SerializableParameter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression/ServiceLocator/ServiceLocatorExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/18D5A60D-361A-4AFD-A431-F772FA87FCC3/1c/bd712047/TestInvoker`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression.Test/UnitTest1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression/ThunkBuilder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression/Thunk.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -41,6 +29,8 @@
         <option value="$PROJECT_DIR$/SerializableSimpleExpression.Test/Tests.fs" />
         <option value="$PROJECT_DIR$/SerializableSimpleExpression/MethodCallParser.fs" />
         <option value="$PROJECT_DIR$/SerializableSimpleExpression/ThunkBuilder.fs" />
+        <option value="$PROJECT_DIR$/SerializableSimpleExpression/ThunkBuilder.cs" />
+        <option value="$PROJECT_DIR$/SerializableSimpleExpression.Test/UnitTest1.cs" />
       </list>
     </option>
   </component>
@@ -65,7 +55,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected=".NET Project.Default">
     <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -98,6 +88,7 @@
       <workItem from="1570801491031" duration="78000" />
       <workItem from="1570831084636" duration="6130000" />
       <workItem from="1571007245597" duration="73000" />
+      <workItem from="1571007691183" duration="415000" />
     </task>
     <servers />
   </component>
@@ -134,6 +125,32 @@
           <line>13</line>
           <properties documentPath="$PROJECT_DIR$/SerializableSimpleExpression.Test/Tests.fs" initialLine="13" />
           <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/SerializableSimpleExpression.Test/UnitTest1.cs</url>
+          <line>14</line>
+          <properties documentPath="$PROJECT_DIR$/SerializableSimpleExpression.Test/UnitTest1.cs" initialLine="14">
+            <startOffsets>
+              <option value="383" />
+            </startOffsets>
+            <endOffsets>
+              <option value="421" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/SerializableSimpleExpression.Test/UnitTest1.cs</url>
+          <line>61</line>
+          <properties documentPath="$PROJECT_DIR$/SerializableSimpleExpression.Test/UnitTest1.cs" initialLine="60">
+            <startOffsets>
+              <option value="1881" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1969" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
