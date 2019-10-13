@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
+using Newtonsoft.Json;
 using SerializableSimpleExpression.ExpressionParsers;
 using SerializableSimpleExpression.ServiceLocator;
 using Xunit;
@@ -48,9 +49,10 @@ namespace SerializableSimpleExpression.Test
         public void Test1()
         {
             var locator = new ServiceLocator().Register(_ => new ExampleObject());
-            Expression<Func<ExampleObject, string>> expr = (eo) => eo.DoSomethingElse();
+            var thunk = ThunkBuilder.Create<ExampleObject, string>(eo => eo.GenericSomething<double>());
 
-            var results = MethodCallParser.Parse(expr);
+            var sThunk = JsonConvert.SerializeObject(thunk);
+            var result = JsonConvert.DeserializeObject<Thunk<string>>(sThunk).Execute(locator);
         }
     }
 }

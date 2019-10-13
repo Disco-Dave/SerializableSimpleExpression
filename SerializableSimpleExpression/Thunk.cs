@@ -13,11 +13,18 @@ namespace SerializableSimpleExpression
         private object[] Arguments { get; } = new object[] { };
         
         
-        public List<SerializableParameter> SerializableParameters { get; } = new List<SerializableParameter>();
         
-        public string ClassType { get; }
+        [JsonProperty]
+        internal List<SerializableParameter> SerializableParameters { get; } = new List<SerializableParameter>();
+        
+        [JsonProperty]
+        internal string ClassType { get; }
+        
+        [JsonProperty]
+        internal string MethodName { get; }
 
-        public List<string> GenericTypes { get; } = new List<string>();
+        [JsonProperty]
+        internal List<string> GenericTypes { get; } = new List<string>();
         
         internal Thunk(MethodInfo methodInfo, object[] arguments)
         {
@@ -26,6 +33,7 @@ namespace SerializableSimpleExpression
 
             this.SerializableParameters = this.Arguments.Select(a => new SerializableParameter(a)).ToList();
             this.ClassType = this.MethodInfo.DeclaringType.AssemblyQualifiedName;
+            this.MethodName = this.MethodInfo.Name;
 
             if (this.MethodInfo.IsGenericMethod)
             {
@@ -33,9 +41,11 @@ namespace SerializableSimpleExpression
             }
         }
 
-        public Thunk(string classType, List<SerializableParameter> serializableParameters, List<string> genericTypes)
+        [JsonConstructor]
+        internal Thunk(string classType, string methodName, List<SerializableParameter> serializableParameters, List<string> genericTypes)
         {
             this.ClassType = classType;
+            this.MethodName = methodName;
 
             if (serializableParameters?.Any() ?? false)
             {
@@ -47,9 +57,15 @@ namespace SerializableSimpleExpression
             {
                 this.GenericTypes = genericTypes;
             }
-            
-            
-            
+
+            var argumentTypes = this.SerializableParameters.Select(a => a.Type).ToArray();
+            this.MethodInfo = Type.GetType(this.ClassType, true).GetMethod(this.MethodName, argumentTypes);
+
+            if (this.GenericTypes.Any())
+            {
+                this.MethodInfo =
+                    this.MethodInfo.MakeGenericMethod(this.GenericTypes.Select(t => Type.GetType(t, true)).ToArray());
+            }
         }
 
         public TReturn Execute(IServiceLocator serviceLocator)

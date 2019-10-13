@@ -2,24 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf23e83c-3299-4253-b54a-bca325c24cbd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.SerializableLambda/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.SerializableLambda/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.SerializableSimpleExpression/riderModule.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SerializableSimpleExpression.Test/SerializableSimpleExpression.Test.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SerializableSimpleExpression.Test/UnitTest1.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SerializableSimpleExpression/AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SerializableSimpleExpression/ExpressionParsers/MethodCallParser.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SerializableSimpleExpression/ExpressionParsers/MethodCallResult.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SerializableSimpleExpression/SerializableParameter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SerializableSimpleExpression/ServiceLocator/IServiceLocator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SerializableSimpleExpression/ServiceLocator/InstanceUnableToBeRetrievedException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SerializableSimpleExpression/ServiceLocator/ServiceLocatorExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SerializableSimpleExpression/Thunk.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SerializableSimpleExpression/ThunkBuilder.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SerializableLambda/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SerializableLambda/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SerializableLambda/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SerializableLambda/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SerializableLambda/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SerializableLambda/riderModule.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SerializableLambda.sln" beforeDir="false" afterPath="$PROJECT_DIR$/SerializableLambda.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SerializableSimpleExpression.Test/UnitTest1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SerializableSimpleExpression.Test/UnitTest1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SerializableSimpleExpression/AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SerializableSimpleExpression/Thunk.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SerializableSimpleExpression/Thunk.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,26 +20,25 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression/SerializableParameter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B685D02A-5330-4337-A2F3-6A6CFAB13B30/fa/6d2cb9a8/Expression.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SerializableLambda/IServiceLocator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SerializableLambda/SerializableLambdaFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression/ServiceLocator/ServiceLocatorExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SerializableLambda/SerializableLambda.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression/ServiceLocator/InstanceUnableToBeRetrievedException.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SerializableLambda/SerializableParameter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression/ServiceLocator/IServiceLocator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SerializableLambda/SerializableLambdaBuilder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression/ExpressionParsers/MethodCallResult.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression.Test/UnitTest1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F9983402-2CF8-45EF-8679-CD8D8CA3CF26/14/9113761d/RuntimeMethodInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F9983402-2CF8-45EF-8679-CD8D8CA3CF26/42/782e0510/Signature.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/18D5A60D-361A-4AFD-A431-F772FA87FCC3/1c/bd712047/TestInvoker`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/12891E82-5FCE-44A5-81E5-BBBB579C1D49/92/e29bd30b/JsonSerializerInternalReader.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ExampleRunner/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SerializableLambda/AbstractSerializableLambdaBuilder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression/ExpressionParsers/MethodCallParser.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F9983402-2CF8-45EF-8679-CD8D8CA3CF26/ef/97735b6e/MethodBase.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SerializableLambda/IServiceLocator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SerializableLambda/SerializableParameter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SerializableLambda/SerializableLambda.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F9983402-2CF8-45EF-8679-CD8D8CA3CF26/8e/c07e1925/Array.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SerializableLambda/SerializableLambdaFactory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SerializableLambda/SerializableLambdaBuilder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression/Thunk.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B685D02A-5330-4337-A2F3-6A6CFAB13B30/5f/fab462f3/LambdaExpression.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression/ServiceLocator/IServiceLocator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression.Test/UnitTest1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression/ThunkBuilder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression/ServiceLocator/ServiceLocatorExtensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression/ServiceLocator/InstanceUnableToBeRetrievedException.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression/ExpressionParsers/MethodCallParser.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression/Thunk.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -73,13 +60,13 @@
         <option value="$PROJECT_DIR$/SerializableSimpleExpression/ServiceLocator/InstanceUnableToBeRetrievedException.cs" />
         <option value="$PROJECT_DIR$/SerializableSimpleExpression/ServiceLocator/ServiceLocatorExtensions.cs" />
         <option value="$PROJECT_DIR$/SerializableSimpleExpression/ExpressionParsers/MethodCall/Result.cs" />
-        <option value="$PROJECT_DIR$/SerializableSimpleExpression/AssemblyInfo.cs" />
         <option value="$PROJECT_DIR$/SerializableSimpleExpression/ExpressionParsers/MethodCall/Parser.cs" />
         <option value="$PROJECT_DIR$/SerializableSimpleExpression/ExpressionParsers/MethodCallResult.cs" />
         <option value="$PROJECT_DIR$/SerializableSimpleExpression/ExpressionParsers/MethodCallParser.cs" />
-        <option value="$PROJECT_DIR$/SerializableSimpleExpression.Test/UnitTest1.cs" />
         <option value="$PROJECT_DIR$/SerializableSimpleExpression/ThunkBuilder.cs" />
         <option value="$PROJECT_DIR$/SerializableSimpleExpression/SerializableParameter.cs" />
+        <option value="$PROJECT_DIR$/SerializableSimpleExpression/AssemblyInfo.cs" />
+        <option value="$PROJECT_DIR$/SerializableSimpleExpression.Test/UnitTest1.cs" />
         <option value="$PROJECT_DIR$/SerializableSimpleExpression/Thunk.cs" />
       </list>
     </option>
@@ -111,7 +98,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected=".NET Project.Default">
     <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="$PROJECT_DIR$/ExampleRunner/bin/Debug/netcoreapp2.2/ExampleRunner.dll" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -145,6 +132,7 @@
       <workItem from="1570656795862" duration="7654000" />
       <workItem from="1570986009758" duration="7804000" />
       <workItem from="1571004037943" duration="508000" />
+      <workItem from="1571005816957" duration="1366000" />
     </task>
     <servers />
   </component>
@@ -220,29 +208,42 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/SerializableSimpleExpression.Test/UnitTest1.cs</url>
-          <line>52</line>
-          <properties documentPath="$PROJECT_DIR$/SerializableSimpleExpression.Test/UnitTest1.cs" initialLine="32">
+          <line>53</line>
+          <properties documentPath="$PROJECT_DIR$/SerializableSimpleExpression.Test/UnitTest1.cs" initialLine="52">
             <startOffsets>
-              <option value="1434" />
+              <option value="1459" />
             </startOffsets>
             <endOffsets>
-              <option value="1463" />
+              <option value="1507" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="11" />
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/SerializableSimpleExpression/ExpressionParsers/MethodCallParser.cs</url>
-          <line>17</line>
-          <properties documentPath="$PROJECT_DIR$/SerializableSimpleExpression/ExpressionParsers/MethodCallParser.cs" initialLine="17">
+          <url>file://$PROJECT_DIR$/SerializableSimpleExpression/Thunk.cs</url>
+          <line>46</line>
+          <properties documentPath="$PROJECT_DIR$/SerializableSimpleExpression/Thunk.cs" initialLine="41">
             <startOffsets>
-              <option value="655" />
+              <option value="1652" />
             </startOffsets>
             <endOffsets>
-              <option value="710" />
+              <option value="1679" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="12" />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/SerializableSimpleExpression/Thunk.cs</url>
+          <line>72</line>
+          <properties documentPath="$PROJECT_DIR$/SerializableSimpleExpression/Thunk.cs" initialLine="67">
+            <startOffsets>
+              <option value="2614" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2684" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
