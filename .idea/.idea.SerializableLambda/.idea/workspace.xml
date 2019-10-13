@@ -1,26 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bf23e83c-3299-4253-b54a-bca325c24cbd" name="Default Changelist" comment="" />
+    <list default="true" id="bf23e83c-3299-4253-b54a-bca325c24cbd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.SerializableLambda/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.SerializableLambda/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.SerializableSimpleExpression/riderModule.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SerializableSimpleExpression.Test/SerializableSimpleExpression.Test.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SerializableSimpleExpression.Test/UnitTest1.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SerializableSimpleExpression/AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SerializableSimpleExpression/ExpressionParsers/MethodCallParser.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SerializableSimpleExpression/ExpressionParsers/MethodCallResult.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SerializableSimpleExpression/SerializableParameter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SerializableSimpleExpression/ServiceLocator/IServiceLocator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SerializableSimpleExpression/ServiceLocator/InstanceUnableToBeRetrievedException.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SerializableSimpleExpression/ServiceLocator/ServiceLocatorExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SerializableSimpleExpression/Thunk.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SerializableSimpleExpression/ThunkBuilder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SerializableLambda/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SerializableLambda/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SerializableLambda/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SerializableLambda/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SerializableLambda/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SerializableLambda/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SerializableLambda.sln" beforeDir="false" afterPath="$PROJECT_DIR$/SerializableLambda.sln" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/SerializableLambda/SerializableLambdaBuilder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SerializableLambda/AbstractSerializableLambdaBuilder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B685D02A-5330-4337-A2F3-6A6CFAB13B30/5f/fab462f3/LambdaExpression.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ExampleRunner/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression/SerializableParameter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B685D02A-5330-4337-A2F3-6A6CFAB13B30/fa/6d2cb9a8/Expression.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SerializableLambda/SerializableLambda.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SerializableLambda/SerializableLambdaFactory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SerializableLambda/SerializableClass.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SerializableLambda/IServiceLocator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression/ExpressionParsers/MethodCallResult.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression.Test/UnitTest1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ExampleRunner/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SerializableLambda/AbstractSerializableLambdaBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression/ExpressionParsers/MethodCallParser.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F9983402-2CF8-45EF-8679-CD8D8CA3CF26/ef/97735b6e/MethodBase.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F9983402-2CF8-45EF-8679-CD8D8CA3CF26/8e/c07e1925/Array.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SerializableLambda/IServiceLocator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SerializableLambda/SerializableParameter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SerializableLambda/SerializableLambda.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F9983402-2CF8-45EF-8679-CD8D8CA3CF26/8e/c07e1925/Array.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SerializableLambda/SerializableLambdaFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SerializableLambda/SerializableLambdaBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression/Thunk.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B685D02A-5330-4337-A2F3-6A6CFAB13B30/5f/fab462f3/LambdaExpression.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression/ServiceLocator/IServiceLocator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression/ThunkBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression/ServiceLocator/ServiceLocatorExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression/ServiceLocator/InstanceUnableToBeRetrievedException.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -36,13 +67,33 @@
         <option value="$PROJECT_DIR$/SerializableLambda/SerializableLambdaBuilder.cs" />
         <option value="$PROJECT_DIR$/SerializableLambda/SerializableLambdaFactory.cs" />
         <option value="$PROJECT_DIR$/ExampleRunner/Program.cs" />
+        <option value="$PROJECT_DIR$/SerializableSimpleExpression/Class1.cs" />
+        <option value="$PROJECT_DIR$/SerializableSimpleExpression/Service/IServiceContainer.cs" />
+        <option value="$PROJECT_DIR$/SerializableSimpleExpression/ServiceLocator/IServiceLocator.cs" />
+        <option value="$PROJECT_DIR$/SerializableSimpleExpression/ServiceLocator/InstanceUnableToBeRetrievedException.cs" />
+        <option value="$PROJECT_DIR$/SerializableSimpleExpression/ServiceLocator/ServiceLocatorExtensions.cs" />
+        <option value="$PROJECT_DIR$/SerializableSimpleExpression/ExpressionParsers/MethodCall/Result.cs" />
+        <option value="$PROJECT_DIR$/SerializableSimpleExpression/AssemblyInfo.cs" />
+        <option value="$PROJECT_DIR$/SerializableSimpleExpression/ExpressionParsers/MethodCall/Parser.cs" />
+        <option value="$PROJECT_DIR$/SerializableSimpleExpression/ExpressionParsers/MethodCallResult.cs" />
+        <option value="$PROJECT_DIR$/SerializableSimpleExpression/ExpressionParsers/MethodCallParser.cs" />
+        <option value="$PROJECT_DIR$/SerializableSimpleExpression.Test/UnitTest1.cs" />
+        <option value="$PROJECT_DIR$/SerializableSimpleExpression/ThunkBuilder.cs" />
+        <option value="$PROJECT_DIR$/SerializableSimpleExpression/SerializableParameter.cs" />
+        <option value="$PROJECT_DIR$/SerializableSimpleExpression/Thunk.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1RyyN6pvcufsaWp4au5dqgmvp6z" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -92,15 +143,46 @@
       <updated>1570653588228</updated>
       <workItem from="1570653591626" duration="3072000" />
       <workItem from="1570656795862" duration="7654000" />
+      <workItem from="1570986009758" duration="7804000" />
+      <workItem from="1571004037943" duration="508000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="UnitTestsCoverage.Settings">
+    <option name="coveragePercentColumnWidth" value="225" />
+    <option name="sortOrder" value="DESCENDING" />
+    <option name="sortedColumn" value="1" />
+    <option name="symbolColumnWidth" value="509" />
+    <coverage-tree-state>
+      <expand>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="1" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+      </expand>
+      <select />
+    </coverage-tree-state>
+  </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -136,7 +218,38 @@
           </properties>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/SerializableSimpleExpression.Test/UnitTest1.cs</url>
+          <line>52</line>
+          <properties documentPath="$PROJECT_DIR$/SerializableSimpleExpression.Test/UnitTest1.cs" initialLine="32">
+            <startOffsets>
+              <option value="1434" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1463" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/SerializableSimpleExpression/ExpressionParsers/MethodCallParser.cs</url>
+          <line>17</line>
+          <properties documentPath="$PROJECT_DIR$/SerializableSimpleExpression/ExpressionParsers/MethodCallParser.cs" initialLine="17">
+            <startOffsets>
+              <option value="655" />
+            </startOffsets>
+            <endOffsets>
+              <option value="710" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <reveal-manager>
+      <revealed-members>
+        <RevealItemInfo typeName="SerializableSimpleExpression.ExpressionParsers.MethodCall.Result" fieldName="ArgumentOrder" />
+      </revealed-members>
+    </reveal-manager>
   </component>
 </project>

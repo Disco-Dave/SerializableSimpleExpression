@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="$USER_HOME$/.Rider2019.2/system/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/.Rider2019.2/system/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_SerializableLambda.-2111662028.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/.Rider2019.2/system/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_SerializableLambda.521482257.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.0/build/netcoreapp1.0/xunit.runner.reporters.netcoreapp10.dll" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.0/build/netcoreapp1.0/xunit.runner.utility.netcoreapp10.dll" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.0/build/netcoreapp1.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll" t="Include" />
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="ExampleRunner" t="IncludeRecursive">
         <e p="ExampleRunner.csproj" t="IncludeRecursive" />
@@ -19,11 +22,11 @@
       <e p="SerializableLambda" t="IncludeRecursive">
         <e p="AbstractSerializableLambdaBuilder.cs" t="Include" />
         <e p="IServiceLocator.cs" t="Include" />
-        <e p="SerializableClass.cs" t="Include" />
         <e p="SerializableLambda.cs" t="Include" />
         <e p="SerializableLambda.csproj" t="IncludeRecursive" />
         <e p="SerializableLambdaBuilder.cs" t="Include" />
         <e p="SerializableLambdaFactory.cs" t="Include" />
+        <e p="SerializableLambdaSnapshot.cs" t="Include" />
         <e p="SerializableParameter.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
@@ -35,6 +38,43 @@
         </e>
       </e>
       <e p="SerializableLambda.sln" t="IncludeFlat" />
+      <e p="SerializableSimpleExpression" t="IncludeRecursive">
+        <e p="AssemblyInfo.cs" t="Include" />
+        <e p="ExpressionParsers" t="Include">
+          <e p="MethodCallParser.cs" t="Include" />
+          <e p="MethodCallResult.cs" t="Include" />
+        </e>
+        <e p="SerializableParameter.cs" t="Include" />
+        <e p="SerializableSimpleExpression.csproj" t="IncludeRecursive" />
+        <e p="ServiceLocator" t="Include">
+          <e p="IServiceLocator.cs" t="Include" />
+          <e p="InstanceUnableToBeRetrievedException.cs" t="Include" />
+          <e p="ServiceLocatorExtensions.cs" t="Include" />
+        </e>
+        <e p="Thunk.cs" t="Include" />
+        <e p="ThunkBuilder.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.2" t="Include">
+              <e p="SerializableSimpleExpression.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="SerializableSimpleExpression.Test" t="IncludeRecursive">
+        <e p="SerializableSimpleExpression.Test.csproj" t="IncludeRecursive" />
+        <e p="UnitTest1.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.2" t="Include">
+              <e p="SerializableSimpleExpression.Test.AssemblyInfo.cs" t="Include" />
+              <e p="SerializableSimpleExpression.Test.Program.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
       <e p="packages" t="ExcludeRecursive" />
     </e>
   </component>

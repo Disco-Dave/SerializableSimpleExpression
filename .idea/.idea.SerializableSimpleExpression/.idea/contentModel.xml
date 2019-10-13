@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/.Rider2019.2/system/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.Rider2019.2/system/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_SerializableSimpleExpression.721037524.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.0/build/netcoreapp1.0/xunit.runner.reporters.netcoreapp10.dll" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.0/build/netcoreapp1.0/xunit.runner.utility.netcoreapp10.dll" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.0/build/netcoreapp1.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll" t="Include" />
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="SerializableSimpleExpression" t="IncludeRecursive">
+        <e p="AssemblyInfo.fs" t="Include" />
+        <e p="IServiceLocator.fs" t="Include" />
+        <e p="MethodCallParser.fs" t="Include" />
+        <e p="SerializableSimpleExpression.fsproj" t="IncludeRecursive" />
+        <e p="Thunk.fs" t="Include" />
+        <e p="ThunkBuilder.fs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+      </e>
+      <e p="SerializableSimpleExpression.Test" t="IncludeRecursive">
+        <e p="Program.fs" t="Include" />
+        <e p="SerializableSimpleExpression.Test.fsproj" t="IncludeRecursive" />
+        <e p="Tests.fs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+      </e>
+      <e p="SerializableSimpleExpression.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
