@@ -8,7 +8,7 @@ namespace SerializableSimpleExpression
     /// A parameter that can be serialized and deserialized safely to and form JSON.
     /// </summary>
     [JsonConverter(typeof(SerializableParameterConverter))]
-    public class SerializableParameter
+    internal class SerializableParameter
     {
         /// <summary>
         /// The value of the parameter.
