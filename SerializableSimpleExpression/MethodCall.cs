@@ -7,12 +7,14 @@ using SerializableSimpleExpression.ServiceLocator;
 
 namespace SerializableSimpleExpression
 {
-    public class Thunk<TReturn>
+    /// <summary>
+    /// A serializable method call.
+    /// </summary>
+    /// <typeparam name="TReturn">The return type from executing the method call.</typeparam>
+    public class MethodCall<TReturn>
     {
         private MethodInfo MethodInfo { get; }
         private object[] Arguments { get; } = new object[] { };
-        
-        
         
         [JsonProperty]
         internal List<SerializableParameter> SerializableParameters { get; } = new List<SerializableParameter>();
@@ -26,7 +28,7 @@ namespace SerializableSimpleExpression
         [JsonProperty]
         internal List<string> GenericTypes { get; } = new List<string>();
         
-        internal Thunk(MethodInfo methodInfo, object[] arguments)
+        internal MethodCall(MethodInfo methodInfo, object[] arguments)
         {
             this.MethodInfo = methodInfo ?? throw new ArgumentNullException(nameof(methodInfo));
             this.Arguments = arguments ?? new object[] {};
@@ -42,7 +44,7 @@ namespace SerializableSimpleExpression
         }
 
         [JsonConstructor]
-        internal Thunk(string classType, string methodName, List<SerializableParameter> serializableParameters, List<string> genericTypes)
+        internal MethodCall(string classType, string methodName, List<SerializableParameter> serializableParameters, List<string> genericTypes)
         {
             this.ClassType = classType;
             this.MethodName = methodName;
@@ -68,6 +70,11 @@ namespace SerializableSimpleExpression
             }
         }
 
+        /// <summary>
+        /// Executes the method call.
+        /// </summary>
+        /// <param name="serviceLocator">A service locator used to retrieving an instance of the declaring type.</param>
+        /// <returns>The result of executing the method.</returns>
         public TReturn Execute(IServiceLocator serviceLocator)
         {
             var classInstance = serviceLocator.Get(this.MethodInfo.DeclaringType);
@@ -75,10 +82,19 @@ namespace SerializableSimpleExpression
             return (TReturn) this.MethodInfo.Invoke(classInstance, parameters);
         }
 
+        /// <summary>
+        /// Converts this method call to JSON.
+        /// </summary>
+        /// <returns>A string of JSON.</returns>
         public string ToJson() =>
             JsonConvert.SerializeObject(this);
 
-        public static Thunk<TReturn> FromJson(string json) =>
-            JsonConvert.DeserializeObject<Thunk<TReturn>>(json);
+        /// <summary>
+        /// Converts a string of JSON into a method call.
+        /// </summary>
+        /// <param name="json">A JSON string of a method call.</param>
+        /// <returns>A method call.</returns>
+        public static MethodCall<TReturn> FromJson(string json) =>
+            JsonConvert.DeserializeObject<MethodCall<TReturn>>(json);
     }
 }

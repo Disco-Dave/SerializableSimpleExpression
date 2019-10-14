@@ -12,6 +12,8 @@
           <e p="MethodCallParser.cs" t="Include" />
           <e p="MethodCallResult.cs" t="Include" />
         </e>
+        <e p="MethodCall.cs" t="Include" />
+        <e p="MethodCallBuilder.cs" t="Include" />
         <e p="SerializableParameter.cs" t="Include" />
         <e p="SerializableSimpleExpression.csproj" t="IncludeRecursive" />
         <e p="ServiceLocator" t="Include">
@@ -19,8 +21,6 @@
           <e p="InstanceUnableToBeRetrievedException.cs" t="Include" />
           <e p="ServiceLocatorExtensions.cs" t="Include" />
         </e>
-        <e p="Thunk.cs" t="Include" />
-        <e p="ThunkBuilder.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">

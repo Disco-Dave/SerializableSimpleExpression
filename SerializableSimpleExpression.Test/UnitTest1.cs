@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
+using System.Threading.Tasks;
 using Newtonsoft.Json;
 using SerializableSimpleExpression.ExpressionParsers;
 using SerializableSimpleExpression.ServiceLocator;
@@ -24,6 +25,11 @@ namespace SerializableSimpleExpression.Test
         {
             return typeof(T).ToString();
         }
+
+        public Task<string> SomeTask()
+        {
+            return Task.FromResult("hey it worked");
+        }
     }
     
     class ServiceLocator : IServiceLocator
@@ -46,21 +52,26 @@ namespace SerializableSimpleExpression.Test
     public class UnitTest1
     {
         [Fact]
-        public void Test1()
+        public async Task Test1()
         {
             var locator = new ServiceLocator().Register(_ => new ExampleObject());
-            var thunk = ThunkBuilder.Create<ExampleObject, string>(eo => eo.GenericSomething<double>());
+            var thunk = MethodCallBuilder.Create<ExampleObject, string>(eo => eo.GenericSomething<double>());
 
             var sThunk = JsonConvert.SerializeObject(thunk);
-            var result = JsonConvert.DeserializeObject<Thunk<string>>(sThunk).Execute(locator);
+            var result = JsonConvert.DeserializeObject<MethodCall<string>>(sThunk).Execute(locator);
 
             var thunk2 =
-                ThunkBuilder.Create<ExampleObject, List<int>, string, double, int>((eo, a, b, c) => eo.DoSomething(c, b, a))
+                MethodCallBuilder.Create<ExampleObject, List<int>, string, double, int>((eo, a, b, c) => eo.DoSomething(c, b, a))
                     .SetArguments("abc", 1.3, 2);
 
             var sThunk2 = JsonConvert.SerializeObject(thunk2);
-            var result2 = JsonConvert.DeserializeObject<Thunk<List<int>>>(sThunk2).Execute(locator);
+            var result2 = JsonConvert.DeserializeObject<MethodCall<List<int>>>(sThunk2).Execute(locator);
 
+            var someMethodCallTask = MethodCallBuilder.Create<ExampleObject, Task<string>>(eo => eo.SomeTask());
+            var s = someMethodCallTask.ToJson();
+            var ss = MethodCall<Task<string>>.FromJson(s);
+
+            var r = await ss.Execute(locator);
         }
     }
 }

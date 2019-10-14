@@ -4,8 +4,19 @@ using System.Linq.Expressions;
 
 namespace SerializableSimpleExpression.ExpressionParsers
 {
+    /// <summary>
+    /// A parser for getting information out of a <see cref="MethodCallExpression"/>.
+    /// </summary>
     internal static class MethodCallParser
     {
+        /// <summary>
+        /// Get all relevant information out of a <see cref="MethodCallExpression"/>.
+        /// </summary>
+        /// <param name="expression">The expression you wish to parse.</param>
+        /// <returns>The parsed method call result.</returns>
+        /// <exception cref="ArgumentException">
+        /// Thrown if the <see cref="LambdaExpression"/> is not a <see cref="MethodCallExpression"/>.
+        /// </exception>
         internal static MethodCallResult Parse(LambdaExpression expression)
         {
             if (!(expression.Body is MethodCallExpression methodCallExpression))
