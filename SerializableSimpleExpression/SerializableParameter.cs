@@ -47,7 +47,7 @@ namespace SerializableSimpleExpression
 
         public override void WriteJson(JsonWriter writer, SerializableParameter value, JsonSerializer serializer)
         {
-            serializer.Serialize(writer, new { value.Value, value.Type });
+            serializer.Serialize(writer, new { value.Value, value.Type.AssemblyQualifiedName; });
         }
     }
 }
