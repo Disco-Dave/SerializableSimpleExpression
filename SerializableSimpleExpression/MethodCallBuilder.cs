@@ -142,10 +142,17 @@ namespace SerializableSimpleExpression
 
         internal MethodCall<TReturn> SetArguments(params object[] args)
         {
-           return new MethodCall<TReturn>(methodCallExpression.MethodInfo, ReOrderArgs(args ?? new object[] {})); 
-        }
+            var variableNameToArg = this.methodCallExpression
+                .ArgumentVariablesInLambda
+                .Zip(args, (n, a) => (name : n, value : a))
+                .ToDictionary(a => a.name, a => a.value);
 
-        private object[] ReOrderArgs(object[] args) =>
-            this.methodCallExpression.ArgumentOrder.Select(i => args[i]).ToArray();
+            var methodArgs = this.methodCallExpression
+                .MethodArgumentVariableNames
+                .Select(a => variableNameToArg[a])
+                .ToArray();
+                
+           return new MethodCall<TReturn>(methodCallExpression.MethodInfo, methodArgs); 
+        }
     }
 }

@@ -25,19 +25,15 @@ namespace SerializableSimpleExpression.ExpressionParsers
             }
             
             var methodInfo = methodCallExpression.Method;
-            var argumentOrder = GetArgumentOrder(methodCallExpression, expression);
-            return new MethodCallResult(methodInfo, argumentOrder);
-
-        }
-
-        private static int[] GetArgumentOrder(MethodCallExpression methodCallExpression, LambdaExpression expression)
-        {
-            var classArgumentName = methodCallExpression.Object.ToString();
-            var methodArgumentOrder = methodCallExpression.Arguments.Select(a => a.ToString()).ToArray();
-            var originalPassedInOrder =
-                expression.Parameters.Select(a => a.ToString()).Where(a => a != classArgumentName);
-
-            return originalPassedInOrder.Select(oa => Array.FindIndex(methodArgumentOrder, ma => ma == oa)).ToArray();
+            var methodArgumentVariableNames = methodCallExpression.Arguments.Select(a => a.ToString());
+            
+            var classArgumentName = methodCallExpression.Object?.ToString();
+            
+            var argumentVariablesInLambda = expression.Parameters
+                .Select(a => a.ToString())
+                .Where(a => a != classArgumentName);
+            
+            return new MethodCallResult(methodInfo, methodArgumentVariableNames, argumentVariablesInLambda);
         }
     }
 }

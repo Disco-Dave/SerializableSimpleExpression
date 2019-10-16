@@ -9,7 +9,9 @@ namespace SerializableSimpleExpression.Test
     public class MethodCallTests
     {
         private static readonly IServiceLocator mockServiceLocator =
-            new MockServiceLocator().Register(_ => new Example());
+            new MockServiceLocator()
+                .Register(_ => new Example())
+                .Register(_ => new GenericExample<int>());
         
         [Fact]
         public void WorksWithZeroArguments()
@@ -51,7 +53,11 @@ namespace SerializableSimpleExpression.Test
         [Fact]
         public void WorksWhenThereAreOverloads()
         {
-           throw new NotImplementedException(); 
+            var methodCall = MethodCallBuilder
+                .Create<Example, string, string, string>((e, x, y) => e.SingleArg(x, y))
+                .SetArguments("first", "second");
+            
+            ExecuteAndAssert("firstsecond", methodCall);
         }
 
         [Fact]
@@ -73,7 +79,11 @@ namespace SerializableSimpleExpression.Test
         [Fact]
         public void WorksWithGenericClass()
         {
-           throw new NotImplementedException(); 
+            var methodCall = MethodCallBuilder
+                .Create<GenericExample<int>, int, int>((ge, i) => ge.Echo(i))
+                .SetArgument(532);
+            
+            ExecuteAndAssert(532, methodCall);
         }
         
         private static void ExecuteAndAssert<T>(T expected, MethodCall<T> methodCall)

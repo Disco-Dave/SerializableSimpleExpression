@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a255cc9c-94bf-4fa3-bc3c-fd4b527ab6bc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/SerializableSimpleExpression.Test/Example.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SerializableSimpleExpression.Test/MockServiceLocator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SerializableSimpleExpression/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SerializableSimpleExpression/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SerializableSimpleExpression/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SerializableSimpleExpression/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SerializableSimpleExpression.Test/SerializableSimpleExpression.Test.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/SerializableSimpleExpression.Test/SerializableSimpleExpression.Test.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SerializableSimpleExpression.Test/UnitTest1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SerializableSimpleExpression.Test/MethodCallTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SerializableSimpleExpression/MethodCall.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SerializableSimpleExpression/MethodCall.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SerializableSimpleExpression/SerializableParameter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SerializableSimpleExpression/SerializableParameter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SerializableSimpleExpression.Test/Example.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SerializableSimpleExpression.Test/Example.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SerializableSimpleExpression.Test/MethodCallTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SerializableSimpleExpression.Test/MethodCallTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SerializableSimpleExpression/ExpressionParsers/MethodCallParser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SerializableSimpleExpression/ExpressionParsers/MethodCallParser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SerializableSimpleExpression/ExpressionParsers/MethodCallResult.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SerializableSimpleExpression/ExpressionParsers/MethodCallResult.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SerializableSimpleExpression/MethodCallBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SerializableSimpleExpression/MethodCallBuilder.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,14 +40,14 @@
         <option value="$PROJECT_DIR$/SerializableSimpleExpression/MethodCallParser.fs" />
         <option value="$PROJECT_DIR$/SerializableSimpleExpression/ThunkBuilder.fs" />
         <option value="$PROJECT_DIR$/SerializableSimpleExpression/ThunkBuilder.cs" />
-        <option value="$PROJECT_DIR$/SerializableSimpleExpression/MethodCallBuilder.cs" />
-        <option value="$PROJECT_DIR$/SerializableSimpleExpression/ExpressionParsers/MethodCallParser.cs" />
-        <option value="$PROJECT_DIR$/SerializableSimpleExpression/ExpressionParsers/MethodCallResult.cs" />
         <option value="$PROJECT_DIR$/SerializableSimpleExpression.Test/UnitTest1.cs" />
         <option value="$PROJECT_DIR$/SerializableSimpleExpression/ServiceLocator/ServiceLocatorExtensions.cs" />
         <option value="$PROJECT_DIR$/SerializableSimpleExpression.Test/MockServiceLocator.cs" />
         <option value="$PROJECT_DIR$/SerializableSimpleExpression/SerializableParameter.cs" />
         <option value="$PROJECT_DIR$/SerializableSimpleExpression/MethodCall.cs" />
+        <option value="$PROJECT_DIR$/SerializableSimpleExpression/ExpressionParsers/MethodCallResult.cs" />
+        <option value="$PROJECT_DIR$/SerializableSimpleExpression/ExpressionParsers/MethodCallParser.cs" />
+        <option value="$PROJECT_DIR$/SerializableSimpleExpression/MethodCallBuilder.cs" />
         <option value="$PROJECT_DIR$/SerializableSimpleExpression.Test/Example.cs" />
         <option value="$PROJECT_DIR$/SerializableSimpleExpression.Test/MethodCallTests.cs" />
       </list>
@@ -116,7 +114,8 @@
       <workItem from="1571007691183" duration="415000" />
       <workItem from="1571014743490" duration="1093000" />
       <workItem from="1571015857120" duration="782000" />
-      <workItem from="1571185815360" duration="3314000" />
+      <workItem from="1571185815360" duration="3445000" />
+      <workItem from="1571265512845" duration="1524000" />
     </task>
     <servers />
   </component>
@@ -153,19 +152,6 @@
           <line>13</line>
           <properties documentPath="$PROJECT_DIR$/SerializableSimpleExpression.Test/Tests.fs" initialLine="13" />
           <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/SerializableSimpleExpression.Test/MethodCallTests.cs</url>
-          <line>73</line>
-          <properties documentPath="$PROJECT_DIR$/SerializableSimpleExpression.Test/UnitTest1.cs" initialLine="73">
-            <startOffsets>
-              <option value="401" />
-            </startOffsets>
-            <endOffsets>
-              <option value="435" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/SerializableSimpleExpression/MethodCall.cs</url>

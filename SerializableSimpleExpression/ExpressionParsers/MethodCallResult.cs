@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Reflection;
 
 namespace SerializableSimpleExpression.ExpressionParsers
@@ -13,19 +15,16 @@ namespace SerializableSimpleExpression.ExpressionParsers
         /// </summary>
         public MethodInfo MethodInfo { get; }
         
-        /// <summary>
-        /// An array that maps the indexes of the expression's arguments to the order of the arguments passed to the method.
-        /// <example>
-        /// (eo, a, c, b) => eo.DoSomething(a,c,b);
-        /// ArgumentOrder = new int[] { 0, 2, 1 };
-        /// </example>
-        /// </summary>
-        public int[] ArgumentOrder { get; }
+        public IEnumerable<string> MethodArgumentVariableNames { get; }
         
-        public MethodCallResult(MethodInfo methodInfo, int[] argumentOrder)
+        public IEnumerable<string> ArgumentVariablesInLambda { get; }
+        
+        public MethodCallResult(MethodInfo methodInfo, IEnumerable<string> methodArgumentVariableNames, IEnumerable<string> argumentVariablesInLambda)
         {
-            MethodInfo = methodInfo ?? throw new ArgumentNullException(nameof(methodInfo));
-            ArgumentOrder = argumentOrder ?? new int[]{};
+            this.MethodInfo = methodInfo ?? throw new ArgumentNullException(nameof(methodInfo));
+            this.MethodArgumentVariableNames = methodArgumentVariableNames ?? Enumerable.Empty<string>();
+            this.ArgumentVariablesInLambda = argumentVariablesInLambda ?? Enumerable.Empty<string>();
+
         }
     }
 }
