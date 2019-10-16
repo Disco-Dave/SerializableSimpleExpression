@@ -61,12 +61,19 @@ namespace SerializableSimpleExpression
             }
 
             var argumentTypes = this.SerializableParameters.Select(a => a.Type).ToArray();
-            this.MethodInfo = Type.GetType(this.ClassType, true).GetMethod(this.MethodName, argumentTypes);
-
+            
             if (this.GenericTypes.Any())
             {
+                //TODO: Needs to be more robust. :(
                 this.MethodInfo =
-                    this.MethodInfo.MakeGenericMethod(this.GenericTypes.Select(t => Type.GetType(t, true)).ToArray());
+                    Type.GetType(this.ClassType, true)
+                        .GetMethod(this.MethodName)
+                        ?.MakeGenericMethod(this.GenericTypes.Select(t => Type.GetType(t, true)).ToArray());
+            }
+            else
+            {
+                this.MethodInfo = Type.GetType(this.ClassType, true)
+                    .GetMethod(this.MethodName, argumentTypes);
             }
         }
 

@@ -35,19 +35,19 @@ namespace SerializableSimpleExpression
             
             var obj = JObject.Load(reader);
 
-            var type = Type.GetType(obj.Value<string>("Type"), true);
+            var type = Type.GetType(obj.Value<string>(nameof(SerializableParameter.Type)), true);
 
             var value = typeof(JToken)
-                .GetMethod(nameof(JToken.Value), new Type[] { typeof(string) })
+                .GetMethod(nameof(JToken.Value), new [] { typeof(string) })
                 ?.MakeGenericMethod(type)
-                .Invoke(obj, new object[] { "Value" });
+                .Invoke(obj, new object[] { nameof(SerializableParameter.Value) });
 
             return new SerializableParameter(value);
         }
 
         public override void WriteJson(JsonWriter writer, SerializableParameter value, JsonSerializer serializer)
         {
-            serializer.Serialize(writer, new { value.Value, value.Type.AssemblyQualifiedName });
+            serializer.Serialize(writer, new { value.Value, Type = value.Type.AssemblyQualifiedName });
         }
     }
 }

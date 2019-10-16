@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a255cc9c-94bf-4fa3-bc3c-fd4b527ab6bc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/SerializableSimpleExpression.Test/Example.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SerializableSimpleExpression.Test/MockServiceLocator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SerializableSimpleExpression/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SerializableSimpleExpression/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SerializableSimpleExpression/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SerializableSimpleExpression/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SerializableSimpleExpression.Test/UnitTest1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SerializableSimpleExpression.Test/UnitTest1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SerializableSimpleExpression/ExpressionParsers/MethodCallParser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SerializableSimpleExpression/ExpressionParsers/MethodCallParser.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SerializableSimpleExpression/ExpressionParsers/MethodCallResult.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SerializableSimpleExpression/ExpressionParsers/MethodCallResult.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SerializableSimpleExpression.Test/SerializableSimpleExpression.Test.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/SerializableSimpleExpression.Test/SerializableSimpleExpression.Test.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SerializableSimpleExpression.Test/UnitTest1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SerializableSimpleExpression.Test/MethodCallTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SerializableSimpleExpression/MethodCall.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SerializableSimpleExpression/MethodCall.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SerializableSimpleExpression/SerializableParameter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SerializableSimpleExpression/SerializableParameter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SerializableSimpleExpression/ServiceLocator/ServiceLocatorExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SerializableSimpleExpression/ServiceLocator/ServiceLocatorExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SerializableSimpleExpression/Thunk.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SerializableSimpleExpression/MethodCall.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SerializableSimpleExpression/ThunkBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SerializableSimpleExpression/MethodCallBuilder.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,14 +22,18 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression/SerializableParameter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/18D5A60D-361A-4AFD-A431-F772FA87FCC3/1c/bd712047/TestInvoker`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/12891E82-5FCE-44A5-81E5-BBBB579C1D49/a1/50aba013/JsonConverter`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression/ExpressionParsers/MethodCallResult.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression.Test/MethodCallTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression.Test/MockServiceLocator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression/ExpressionParsers/MethodCallParser.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression.Test/Example.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression/MethodCall.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression/MethodCallBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/12891E82-5FCE-44A5-81E5-BBBB579C1D49/88/31250296/JsonConvert.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression/ServiceLocator/ServiceLocatorExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression/ServiceLocator/InstanceUnableToBeRetrievedException.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression/ExpressionParsers/MethodCallResult.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/18D5A60D-361A-4AFD-A431-F772FA87FCC3/1c/bd712047/TestInvoker`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression.Test/UnitTest1.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression/MethodCallBuilder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression/MethodCall.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression/ExpressionParsers/MethodCallParser.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -43,13 +46,19 @@
         <option value="$PROJECT_DIR$/SerializableSimpleExpression/ExpressionParsers/MethodCallParser.cs" />
         <option value="$PROJECT_DIR$/SerializableSimpleExpression/ExpressionParsers/MethodCallResult.cs" />
         <option value="$PROJECT_DIR$/SerializableSimpleExpression.Test/UnitTest1.cs" />
-        <option value="$PROJECT_DIR$/SerializableSimpleExpression/MethodCall.cs" />
-        <option value="$PROJECT_DIR$/SerializableSimpleExpression/SerializableParameter.cs" />
         <option value="$PROJECT_DIR$/SerializableSimpleExpression/ServiceLocator/ServiceLocatorExtensions.cs" />
+        <option value="$PROJECT_DIR$/SerializableSimpleExpression.Test/MockServiceLocator.cs" />
+        <option value="$PROJECT_DIR$/SerializableSimpleExpression/SerializableParameter.cs" />
+        <option value="$PROJECT_DIR$/SerializableSimpleExpression/MethodCall.cs" />
+        <option value="$PROJECT_DIR$/SerializableSimpleExpression.Test/Example.cs" />
+        <option value="$PROJECT_DIR$/SerializableSimpleExpression.Test/MethodCallTests.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1S3o9coEnREudoFWl6j7ujaesa2" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
@@ -57,7 +66,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/SerializableSimpleExpression/SerializableSimpleExpression.fsproj" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -71,7 +80,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected=".NET Project.Default">
     <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -107,6 +116,7 @@
       <workItem from="1571007691183" duration="415000" />
       <workItem from="1571014743490" duration="1093000" />
       <workItem from="1571015857120" duration="782000" />
+      <workItem from="1571185815360" duration="3314000" />
     </task>
     <servers />
   </component>
@@ -145,17 +155,30 @@
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/SerializableSimpleExpression.Test/UnitTest1.cs</url>
+          <url>file://$PROJECT_DIR$/SerializableSimpleExpression.Test/MethodCallTests.cs</url>
           <line>73</line>
           <properties documentPath="$PROJECT_DIR$/SerializableSimpleExpression.Test/UnitTest1.cs" initialLine="73">
             <startOffsets>
-              <option value="2374" />
+              <option value="401" />
             </startOffsets>
             <endOffsets>
-              <option value="2408" />
+              <option value="435" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/SerializableSimpleExpression/MethodCall.cs</url>
+          <line>48</line>
+          <properties documentPath="$PROJECT_DIR$/SerializableSimpleExpression/MethodCall.cs" initialLine="48">
+            <startOffsets>
+              <option value="1816" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1843" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
