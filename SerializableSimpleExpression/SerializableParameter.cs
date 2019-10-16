@@ -39,7 +39,7 @@ namespace SerializableSimpleExpression
 
             var value = typeof(JToken)
                 .GetMethod(nameof(JToken.Value), new Type[] { typeof(string) })
-                .MakeGenericMethod(type)
+                ?.MakeGenericMethod(type)
                 .Invoke(obj, new object[] { "Value" });
 
             return new SerializableParameter(value);
@@ -47,7 +47,7 @@ namespace SerializableSimpleExpression
 
         public override void WriteJson(JsonWriter writer, SerializableParameter value, JsonSerializer serializer)
         {
-            serializer.Serialize(writer, new { value.Value, value.Type.AssemblyQualifiedName; });
+            serializer.Serialize(writer, new { value.Value, value.Type.AssemblyQualifiedName });
         }
     }
 }
