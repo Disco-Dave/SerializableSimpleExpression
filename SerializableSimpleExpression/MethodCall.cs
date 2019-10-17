@@ -33,6 +33,7 @@ namespace SerializableSimpleExpression
             this.MethodInfo = methodInfo ?? throw new ArgumentNullException(nameof(methodInfo));
             this.Arguments = arguments ?? new object[] {};
 
+
             this.SerializableParameters = this.Arguments.Select(a => new SerializableParameter(a)).ToList();
             this.ClassType = this.MethodInfo.DeclaringType.AssemblyQualifiedName;
             this.MethodName = this.MethodInfo.Name;
@@ -64,11 +65,13 @@ namespace SerializableSimpleExpression
             
             if (this.GenericTypes.Any())
             {
-                //TODO: Needs to be more robust. :(
-                this.MethodInfo =
-                    Type.GetType(this.ClassType, true)
-                        .GetMethod(this.MethodName)
-                        ?.MakeGenericMethod(this.GenericTypes.Select(t => Type.GetType(t, true)).ToArray());
+                var genericTypeArray = this.GenericTypes.Select(t => Type.GetType(t, true)).ToArray();
+                
+                this.MethodInfo = Type
+                    .GetType(this.ClassType, true)
+                    .GetMethods()
+                    .First(this.IsCorrectMethodInfo(genericTypeArray, argumentTypes))
+                    .MakeGenericMethod(genericTypeArray);
             }
             else
             {
@@ -76,6 +79,23 @@ namespace SerializableSimpleExpression
                     .GetMethod(this.MethodName, argumentTypes);
             }
         }
+
+        private Func<MethodInfo, bool> IsCorrectMethodInfo(Type[] genericTypes, Type[] argumentTypes) => methodInfo =>
+        {
+            if (methodInfo.Name == this.MethodName
+                && methodInfo.GetGenericArguments().Length == genericTypes.Length
+                && methodInfo.GetParameters().Length == argumentTypes.Length)
+            {
+                var saturatedMethodInfo = methodInfo.MakeGenericMethod(genericTypes);
+                
+                return saturatedMethodInfo
+                    .GetParameters()
+                    .Zip(argumentTypes, (p, at) => (p.ParameterType, at))
+                    .All(a => a.Item1 == a.Item2);
+            }
+            
+            return false;
+        };
 
         /// <summary>
         /// Executes the method call.

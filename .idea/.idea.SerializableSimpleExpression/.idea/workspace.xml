@@ -5,9 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SerializableSimpleExpression/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SerializableSimpleExpression/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SerializableSimpleExpression.Test/Example.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SerializableSimpleExpression.Test/Example.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SerializableSimpleExpression.Test/MethodCallTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SerializableSimpleExpression.Test/MethodCallTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SerializableSimpleExpression/ExpressionParsers/MethodCallParser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SerializableSimpleExpression/ExpressionParsers/MethodCallParser.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SerializableSimpleExpression/ExpressionParsers/MethodCallResult.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SerializableSimpleExpression/ExpressionParsers/MethodCallResult.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SerializableSimpleExpression/MethodCallBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SerializableSimpleExpression/MethodCallBuilder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SerializableSimpleExpression/MethodCall.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SerializableSimpleExpression/MethodCall.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,12 +24,14 @@
     <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression.Test/MethodCallTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression.Test/MockServiceLocator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression/ExpressionParsers/MethodCallParser.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F9983402-2CF8-45EF-8679-CD8D8CA3CF26/ef/97735b6e/MethodBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression.Test/Example.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression/MethodCall.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression/MethodCallBuilder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/12891E82-5FCE-44A5-81E5-BBBB579C1D49/88/31250296/JsonConvert.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression/ServiceLocator/ServiceLocatorExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SerializableSimpleExpression/ServiceLocator/InstanceUnableToBeRetrievedException.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F9983402-2CF8-45EF-8679-CD8D8CA3CF26/7d/210eb1e4/ParameterInfo.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -44,12 +44,12 @@
         <option value="$PROJECT_DIR$/SerializableSimpleExpression/ServiceLocator/ServiceLocatorExtensions.cs" />
         <option value="$PROJECT_DIR$/SerializableSimpleExpression.Test/MockServiceLocator.cs" />
         <option value="$PROJECT_DIR$/SerializableSimpleExpression/SerializableParameter.cs" />
-        <option value="$PROJECT_DIR$/SerializableSimpleExpression/MethodCall.cs" />
         <option value="$PROJECT_DIR$/SerializableSimpleExpression/ExpressionParsers/MethodCallResult.cs" />
         <option value="$PROJECT_DIR$/SerializableSimpleExpression/ExpressionParsers/MethodCallParser.cs" />
         <option value="$PROJECT_DIR$/SerializableSimpleExpression/MethodCallBuilder.cs" />
         <option value="$PROJECT_DIR$/SerializableSimpleExpression.Test/Example.cs" />
         <option value="$PROJECT_DIR$/SerializableSimpleExpression.Test/MethodCallTests.cs" />
+        <option value="$PROJECT_DIR$/SerializableSimpleExpression/MethodCall.cs" />
       </list>
     </option>
   </component>
@@ -115,7 +115,7 @@
       <workItem from="1571014743490" duration="1093000" />
       <workItem from="1571015857120" duration="782000" />
       <workItem from="1571185815360" duration="3445000" />
-      <workItem from="1571265512845" duration="1524000" />
+      <workItem from="1571265512845" duration="5537000" />
     </task>
     <servers />
   </component>
@@ -155,16 +155,16 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/SerializableSimpleExpression/MethodCall.cs</url>
-          <line>48</line>
-          <properties documentPath="$PROJECT_DIR$/SerializableSimpleExpression/MethodCall.cs" initialLine="48">
+          <line>92</line>
+          <properties documentPath="$PROJECT_DIR$/SerializableSimpleExpression/MethodCall.cs" initialLine="92">
             <startOffsets>
-              <option value="1816" />
+              <option value="3635" />
             </startOffsets>
             <endOffsets>
-              <option value="1843" />
+              <option value="3653" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="19" />
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

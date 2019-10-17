@@ -63,7 +63,11 @@ namespace SerializableSimpleExpression.Test
         [Fact]
         public void WorksWhenThereAreGenericOverloads()
         {
-           throw new NotImplementedException(); 
+            var methodCall = MethodCallBuilder
+                .Create<Example, IEnumerable<string>, string, int>((e, x, y) => e.OverloadedGeneric(x, y))
+                .SetArguments("one", 2);
+            
+            ExecuteAndAssert(new [] {"one", "2"}, methodCall);
         }
 
         [Fact]
@@ -85,6 +89,17 @@ namespace SerializableSimpleExpression.Test
             
             ExecuteAndAssert(532, methodCall);
         }
+
+        [Fact]
+        public void WorksWithMixtureOfGenericAndConcreteParams()
+        {
+            var methodCall = MethodCallBuilder
+                .Create<Example, IEnumerable<string>, int, string, double>((e, a, b, c) => e.OverloadedGeneric(a, b, c))
+                .SetArguments(1, "two", 3.2);
+            
+            ExecuteAndAssert(new [] { "1", "two", "3.2"}, methodCall);
+        }
+        
         
         private static void ExecuteAndAssert<T>(T expected, MethodCall<T> methodCall)
         {
