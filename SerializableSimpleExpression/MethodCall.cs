@@ -67,8 +67,7 @@ namespace SerializableSimpleExpression
             {
                 var genericTypeArray = this.GenericTypes.Select(t => Type.GetType(t, true)).ToArray();
                 
-                this.MethodInfo = Type
-                    .GetType(this.ClassType, true)
+                this.MethodInfo = Type.GetType(this.ClassType, true)
                     .GetMethods()
                     .First(this.IsCorrectMethodInfo(genericTypeArray, argumentTypes))
                     .MakeGenericMethod(genericTypeArray);
